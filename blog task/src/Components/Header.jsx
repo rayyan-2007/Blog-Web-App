@@ -5,32 +5,24 @@ const Header = ({toggleMenu}) => {
   return (
     <div className="header-container">
       <div className="container">
-        <h1>
-          <i
-            className="blog-logo
-          fa-brands fa-wordpress"
-          ></i>
-        </h1>
+        <i className="blog-logo fa-brands fa-wordpress"></i>
+
+        <h3>Blog</h3>
+
+        <div className="btn">
+          <button className="bar" onClick={toggleMenu}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
         <div className="input-container">
-          <h3>Blog</h3>
-
-          <button className="bar" onClick={toggleMenu}>
-            <i className=" bars fa-solid fa-bars"></i>
-          </button>
-
-        
-            <input type="text" placeholder="What do you want to read?" />
-            <p className="logo">
-              <i className="fa-brands fa-sistrix"></i>
-            </p>
-          
-
+          <input type="text" placeholder="What do you want to read?" />
+          <i className="logo fa-brands fa-sistrix"></i>
         </div>
-      </div>
 
-      <div className="sign-container">
-        <h4>Sign in</h4>
+        <div className="sign-container">
+          <h4>Sign in</h4>
+        </div>
       </div>
     </div>
   );
