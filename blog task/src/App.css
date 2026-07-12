@@ -30,7 +30,7 @@ body{
 
 input{
   padding: 8px;
-  width: 350px;
+  width: 400px;
   border: none;
   outline: none;
   border-radius: 6px;
@@ -54,17 +54,15 @@ input{
 .container{
     display:flex;
     align-items:center;
-    justify-content:space-around;
-    gap:15px;
+    justify-content:space-evenly;
+    gap:20px;
     width:100%;
      background: #1f2937;
      padding: 20px;
 }
 
 
-.sign-container{
-    white-space:nowrap;
-}
+
 h4{
   color: rgb(27, 147, 27);
   font-weight: 500;
@@ -333,7 +331,7 @@ h1{
 
 
   .blog-logo{
-    font-size: 25px;
+    font-size: 30px;
   }
 
    .inner{
@@ -376,7 +374,7 @@ h1{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:20px;
-    padding:15px;
+    padding:20px;
 }
 
 
@@ -384,7 +382,9 @@ h1{
     font-size: 25px;
   }
 
-
+.btn{
+  display: flex;
+}
   .nav-container{
     width: 100%;
     content: "";
@@ -471,13 +471,16 @@ h1{
 
 
 .container{
-  gap: 6px;
-  display: flex;
-  justify-content:end;
-  align-items:end;
-  flex-wrap: wrap;
+  gap: 4px;
+  display: flex;  
+  justify-content:flex-start;
+  align-items:baseline;
   flex-direction: row;
- 
+  flex-wrap: nowrap;
+}
+
+.blog-logo{
+  text-align: center;
 }
 
 
@@ -498,7 +501,7 @@ h1{
   }
 
   .blog-logo{
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .nav-container a{
@@ -576,7 +579,7 @@ h1{
   }
 
   .blog-logo{
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .nav-container a{
